@@ -4,23 +4,23 @@ import Image from "next/image";
 
 const images = [
   // bottom layer
-  { src: "/mock1.jpg", top: "-10px", left: "-10px" },
-  { src: "/mock2.jpg", top: "-20px", left: "40px" },
-  { src: "/mock3.jpg", top: "-15px", left: "90px" },
-  { src: "/mock4.jpg", top: "-7px", left: "140px" },
-  { src: "/mock4.jpg", top: "-3px", left: "190px" },
+  { src: "/IMG_01.jpg", top: "-10px", left: "-10px" },
+  { src: "/IMG_02.jpg", top: "-40px", left: "40px" },
+  { src: "/IMG_03.jpg", top: "-45px", left: "90px" },
+  { src: "/IMG_04.jpg", top: "-30px", left: "140px" },
+  { src: "/IMG_05.jpg", top: "-3px", left: "190px" },
 
   // middle layer
-  { src: "/mock2.jpg", top: "-60px", left: "0px" },
-  { src: "/mock3.jpg", top: "-70px", left: "50px" },
-  { src: "/mock4.jpg", top: "-75px", left: "100px" },
-  { src: "/mock1.jpg", top: "-70px", left: "150px" },
-  { src: "/mock2.jpg", top: "-65px", left: "200px" },
+  { src: "/IMG_06.jpg", top: "-90px", left: "0px" },
+  { src: "/IMG_07.jpg", top: "-100px", left: "50px" },
+  { src: "/IMG_08.jpg", top: "-105px", left: "100px" },
+  { src: "/IMG_09.jpg", top: "-100px", left: "150px" },
+  { src: "/IMG_10.jpg", top: "-95px", left: "200px" },
 
   // top layer
-  { src: "/mock4.jpg", top: "-100px", left: "60px" },
-  { src: "/mock1.jpg", top: "-120px", left: "110px" },
-  { src: "/mock2.jpg", top: "-115px", left: "160px" },
+  { src: "/IMG_11.jpg", top: "-160px", left: "60px" },
+  { src: "/IMG_12.jpg", top: "-170px", left: "110px" },
+  { src: "/IMG_13.jpg", top: "-165px", left: "160px" },
 ];
 
 function Bouquet({ currentIndex }: any) {

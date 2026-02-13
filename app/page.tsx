@@ -21,6 +21,10 @@ export default function Home() {
   const imagesLength = 13;
 
   const handleClick = (e: React.MouseEvent<HTMLDivElement>) => {
+    if (currentIndex === imagesLength) {
+      setShowFinalPopup(true);
+      return; // หยุด ไม่ต้องเพิ่ม index
+    }
     // เพิ่มรูปจาก bouquet
     setCurrentIndex((prev) => prev + 1);
 
@@ -40,14 +44,6 @@ export default function Home() {
     setTimeout(() => {
       setFloatingTexts((prev) => prev.filter((item) => item.id !== newText.id));
     }, 1000);
-
-    if (currentIndex + 2 === imagesLength) {
-      setShowFinalPopup(true);
-
-      // setTimeout(() => {
-      //   setShowFinalPopup(false);
-      // }, 1000);
-    }
   };
 
   return (
